@@ -37,7 +37,39 @@ const myFunction3 = (name) => {
 const myFunction4 = name => `Chào mừng bạn ${name}, chúc mừng bạn`;
 
 // console.log(myFunction3('chinhpd5'));
-console.log(myFunction4('chinhpd5'));
+// console.log(myFunction4('chinhpd5'));
 
+
+// Default Parameter
+const total = (a,b=1) => a+b
+
+// console.log(total(3));
+
+// Destructing
+const myArray = [1,2,3,4];
+const [a,,c,d] = myArray;
+
+// console.log(a); // 1
+// // console.log(b); // undefined
+// console.log(c); // 3
+// console.log(d); // 4
+
+const myObject = {
+  name: 'chinhpd5',
+  age: 20,
+  child: {
+    name: "chinhpd6"
+  }
+}
+
+var {name : parentName, age, child: {name}} = myObject
+console.log(parentName);
+console.log(age);
+console.log(name);
+
+
+// rest
+
+// spread
 
 
