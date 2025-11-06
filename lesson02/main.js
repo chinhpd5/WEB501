@@ -7,7 +7,6 @@ const students = [
 ];
 
 // forEach
-
 students.forEach((item,index, array)=>{
 
   // console.log(item);
@@ -17,3 +16,26 @@ students.forEach((item,index, array)=>{
     `Họ và tên: ${item.name}, tuổi: ${item.age}`
   );
 })
+
+// map: duyệt qua các phần tử trong mảng và trả về mảng mới, 
+// các tử trong mảng mởi trả về thông qua return
+
+const newStudents = students.map((item)=>{
+  let rank ='';
+  if(item.mark > 9)
+    rank = 'Giỏi'
+  else if(item.mark > 7)
+    rank = 'Khá'
+  else if(item.mark > 5)
+    rank = 'Trung bình'
+  else
+    rank = 'Yếu'
+
+  return {
+    ...item, // spread
+    // rank: rank
+    rank
+  }
+})
+
+console.log(newStudents);
