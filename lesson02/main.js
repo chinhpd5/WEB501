@@ -1,3 +1,10 @@
+// đúng tên biến và nằm trong {}
+import {myName as newName, sayHello} from './test.js'
+// có thể khác tên biến và KHÔNG {}
+import xyz from './test.js'
+console.log(xyz);
+
+
 const students = [
   { name: "Hà", age: 20, gender: "Nữ", mark: 8.5 },
   { name: "Long", age: 21, gender: "Nam", mark: 6.8 },
@@ -58,13 +65,17 @@ students.forEach(item => {
   total+=item.mark
 })
 
-console.log(total);
+// console.log(total);
 
 const totalReduce = students.reduce((preValue, item, index,array)=>{
   return preValue += item.mark
 },0)
 
-console.log(totalReduce);
+// console.log(totalReduce);
+
+console.log(newName);
+sayHello();
+
 
 
 
