@@ -43,9 +43,28 @@ const newStudents = students.map((item)=>{
 // filter: duyệt mảng, trả về mảng mới, có điều kiện ở return
 
 const menStudent = students.filter((item)=>{
-  return item.gender == 'Nữ'
+  // return item.gender == 'Nữ'
+  return item.age >= 20
 })
 
-console.log(menStudent);
+// console.log(menStudent);
 // lọc các bạn có tuổi lớn hơn hoặc bằng 20
+
+// reduce
+
+let total = 0;
+
+students.forEach(item => {
+  total+=item.mark
+})
+
+console.log(total);
+
+const totalReduce = students.reduce((preValue, item, index,array)=>{
+  return preValue += item.mark
+},0)
+
+console.log(totalReduce);
+
+
 
