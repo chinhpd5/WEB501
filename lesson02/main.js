@@ -12,9 +12,9 @@ students.forEach((item,index, array)=>{
   // console.log(item);
   // console.log(index);
   // console.log(array);
-  console.log(
-    `Họ và tên: ${item.name}, tuổi: ${item.age}`
-  );
+  // console.log(
+  //   `Họ và tên: ${item.name}, tuổi: ${item.age}`
+  // );
 })
 
 // map: duyệt qua các phần tử trong mảng và trả về mảng mới, 
@@ -38,4 +38,14 @@ const newStudents = students.map((item)=>{
   }
 })
 
-console.log(newStudents);
+// console.log(newStudents);
+
+// filter: duyệt mảng, trả về mảng mới, có điều kiện ở return
+
+const menStudent = students.filter((item)=>{
+  return item.gender == 'Nữ'
+})
+
+console.log(menStudent);
+// lọc các bạn có tuổi lớn hơn hoặc bằng 20
+
