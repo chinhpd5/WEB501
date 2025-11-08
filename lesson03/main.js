@@ -41,7 +41,51 @@ function doingCallback(){
   
 }
 
-doingCallback();
+// doingCallback();
 // call back hell
 
 // promise
+
+const myPromise = new Promise((resolve, reject)=>{
+  const isCheck = true;
+  if(isCheck){
+    resolve('Thành công')
+  }else{
+    reject('Thất bại')
+  }
+})
+
+// myPromise
+//   .then((res)=>{
+//     console.log(res);
+//     // đồng bộ
+//     return `${res} ...` // các tác bất đồng bộ tiếp theo
+//   })
+//   .then(data => {
+//     console.log(data);
+//   })
+//   .catch((err)=>{
+//     console.log(err);
+//   })
+//   .finally(()=>{
+//     console.log("Kết thúc");
+//   })
+
+
+const getData = () => {
+  fetch(`http://localhost:3000/events`)
+    .then(res => {
+      console.log(res);
+      return res.json();
+    })
+    .then(data => {
+      console.log(data);
+      // hiển thị ra danh sách
+      // rendertable()
+    })
+    .catch(err => {
+      console.log(err);
+    })
+}
+
+getData();
