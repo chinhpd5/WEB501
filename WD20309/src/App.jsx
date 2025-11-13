@@ -1,5 +1,5 @@
 import Product from "./component/Product"
-
+import Button from "./component/Button";
 
 function App() {
   const data = {
@@ -36,6 +36,8 @@ function App() {
 
   return (
     <div >
+      <Button/>
+
       {/* <Product 
         name={data.name} 
         price={data.price}
@@ -46,7 +48,8 @@ function App() {
 
         <div className="d-flex">
 
-          {products.map((item,index)=>{
+        {
+          products.map((item,index)=>{
             return (
               <Product 
                 key={index}
@@ -57,10 +60,11 @@ function App() {
                 image={item.image}
               />
             )
-
-          })}
+          })
+        }
           
         </div>
+
     </div>
   )
 }
