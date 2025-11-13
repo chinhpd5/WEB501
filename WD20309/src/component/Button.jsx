@@ -16,8 +16,7 @@ function Button() {
       <button onClick={handleDecrease} className="btn btn-danger">
         Giảm
       </button>
-
-      <button onClick={handleReset} className="btn btn-warining">
+      <button onClick={handleReset} className="btn btn-warning">
         Reset
       </button>
     </div>
