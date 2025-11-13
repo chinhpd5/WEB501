@@ -35,14 +35,32 @@ function App() {
 
 
   return (
-    <div>
-      <Product 
+    <div >
+      {/* <Product 
         name={data.name} 
         price={data.price}
         category={data.category}
         inStock={data.inStock}
         image={data.image}
-        />
+        /> */}
+
+        <div className="d-flex">
+
+          {products.map((item,index)=>{
+            return (
+              <Product 
+                key={index}
+                name={item.name} 
+                price={item.price}
+                category={item.category}
+                inStock={item.inStock}
+                image={item.image}
+              />
+            )
+
+          })}
+          
+        </div>
     </div>
   )
 }
