@@ -9,6 +9,30 @@ function App() {
     inStock: true,
     image: "https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1671853906962-RV08WWNIS1LTNE453MOX/Artboard%2B2.jpg?format=750w"
   }
+  const products = [
+    {
+      name: "Chuột không dây Logitech M331",
+      price: 350000,
+      category: "Phụ kiện máy tính",
+      inStock: true,
+      image: "https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1671853906962-RV08WWNIS1LTNE453MOX/Artboard%2B2.jpg?format=750w"
+    },
+    {
+      name: "Bàn phím cơ Keychron K6",
+      price: 1900000,
+      category: "Phụ kiện máy tính",
+      inStock: false,
+      image: "https://atinproduction.com/wp-content/uploads/2021/07/AWP01220-scaled-1280x1920.jpg"
+    },
+    {
+      name: "Tai nghe Bluetooth Sony WH-CH520",
+      price: 1450000,
+      category: "Âm thanh",
+      inStock: true,
+      image: "https://pos.nvncdn.com/86c7ad-50310/art/artCT/20240923_KuFQeVTu.png"
+    }
+  ];
+
 
   return (
     <div>
