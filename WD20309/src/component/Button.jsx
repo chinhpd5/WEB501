@@ -6,6 +6,14 @@ function Button() {
   const handleIncrease = () => {
     setCount(count++)
   }
+  
+  const handleDecrease = () => {
+    setCount(count--)
+  }
+  
+  const handleReset = () =>{
+    setCount(0)
+  }
 
   return (
     <div>
