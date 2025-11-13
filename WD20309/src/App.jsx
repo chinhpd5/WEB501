@@ -12,7 +12,13 @@ function App() {
 
   return (
     <div>
-      <Product/>
+      <Product 
+        name={data.name} 
+        price={data.price}
+        category={data.category}
+        inStock={data.inStock}
+        image={data.image}
+        />
     </div>
   )
 }
