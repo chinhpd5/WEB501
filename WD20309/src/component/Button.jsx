@@ -1,14 +1,24 @@
 import React, { useState } from 'react'
 
 function Button() {
-  let [count, setCount] = useState(1)
+  const [count, setCount] = useState(1)
 
   const handleIncrease = () => {
-    setCount(count++)
+    // prev: giá trị trước đó của count
+    setCount((prev)=>{
+      return prev+1; // return: giá trị thay thế
+    })
+    setCount((prev)=>{
+      return prev+1; // return: giá trị thay thế
+    })
+    setCount((prev)=>{
+      return prev+1; // return: giá trị thay thế
+    })
+    
   }
   
   const handleDecrease = () => {
-    setCount(count--)
+    setCount(count-1)
   }
   
   const handleReset = () =>{

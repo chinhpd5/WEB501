@@ -48,7 +48,7 @@ function App() {
 
         <div className="d-flex">
 
-        {
+        {/* {
           products.map((item,index)=>{
             return (
               <Product 
@@ -61,7 +61,7 @@ function App() {
               />
             )
           })
-        }
+        } */}
           
         </div>
 
