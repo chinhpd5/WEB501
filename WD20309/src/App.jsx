@@ -1,5 +1,6 @@
 import Product from "./component/Product"
 import Button from "./component/Button";
+import ToDoList from "./component/ToDoList";
 
 function App() {
   const data = {
@@ -35,8 +36,10 @@ function App() {
 
 
   return (
-    <div >
+    <>
       <Button/>
+      <hr />
+      <ToDoList/>
 
       {/* <Product 
         name={data.name} 
@@ -46,9 +49,9 @@ function App() {
         image={data.image}
         /> */}
 
-        <div className="d-flex">
+        {/* <div className="d-flex">
 
-        {/* {
+        {
           products.map((item,index)=>{
             return (
               <Product 
@@ -61,11 +64,11 @@ function App() {
               />
             )
           })
-        } */}
+        }
           
-        </div>
+        </div> */}
 
-    </div>
+    </>
   )
 }
 
