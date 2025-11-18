@@ -1,6 +1,7 @@
 import Product from "./component/Product"
 import Button from "./component/Button";
 import ToDoList from "./component/ToDoList";
+import Title from "./component/Title";
 
 function App() {
   const data = {
@@ -40,6 +41,9 @@ function App() {
       <Button/>
       <hr />
       <ToDoList/>
+
+      <hr />
+      <Title/>
 
       {/* <Product 
         name={data.name} 
