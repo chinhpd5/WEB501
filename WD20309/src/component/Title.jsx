@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 function Title() {
   const [title, setTitle] = useState('')
 
+  // UseEffect không có []:
   // callback luôn chạy lần đầu
   // callback gọi lại mỗi khi componet re render
   useEffect(()=>{

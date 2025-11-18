@@ -2,6 +2,7 @@ import Product from "./component/Product"
 import Button from "./component/Button";
 import ToDoList from "./component/ToDoList";
 import Title from "./component/Title";
+import CallAPI from "./component/CallAPI";
 
 function App() {
   const data = {
@@ -45,6 +46,8 @@ function App() {
       <hr />
       <Title/>
 
+      <hr />
+      <CallAPI/>
       {/* <Product 
         name={data.name} 
         price={data.price}
