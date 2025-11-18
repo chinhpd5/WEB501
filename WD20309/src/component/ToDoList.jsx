@@ -14,6 +14,15 @@ function ToDoList() {
     setText('')
   }
 
+  const handleDelete = (i) => {
+    // console.log(i);
+    setJobs((prev)=>{
+      return prev.filter((item,index) => {
+        return index != i
+      })
+    })
+  }
+
   return (
     <div>
       <input 
@@ -30,7 +39,7 @@ function ToDoList() {
           return (
             <li key={index}>
               {item} 
-              <button className="btn btn-danger">Xóa</button>
+              <button onClick={()=>{ handleDelete(index) }} className="btn btn-danger">Xóa</button>
             </li>
           )
         })}
