@@ -39,14 +39,14 @@ function App() {
 
   return (
     <>
-      <Button/>
+      {/* <Button/>
       <hr />
       <ToDoList/>
 
       <hr />
       <Title/>
 
-      <hr />
+      <hr /> */}
       <CallAPI/>
       {/* <Product 
         name={data.name} 
