@@ -1,6 +1,7 @@
 import  {Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import Product from './pages/Product'
+import ProductDetail from './pages/ProductDetail'
 import About from './pages/About'
 import ClientLayout from './layouts/ClientLayout'
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<ClientLayout/>}>
           <Route path='' element={ <Home/> } />
           <Route path='product' element={ <Product/> } />
+          <Route path='product/:id' element={ <ProductDetail/> } />
           <Route path='about' element={ <About/> } />
         </Route>
 
