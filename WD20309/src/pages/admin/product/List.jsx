@@ -25,9 +25,26 @@ function List() {
         console.log(error);
       }
     })()
-    
-
   },[])
+
+  const handleDelete = async (id) => {
+    if(!id)
+      return;
+    // console.log(id);
+    try {
+      if(window.confirm("Bạn có chắc chắn muốn xóa không")){
+        await instanceAxios.delete(`products/${id}`)
+        alert("Xóa thành công")
+        setProducts((prev)=>{
+          return prev.filter((item) => item.id != id)
+        })
+      }
+    } catch (error) {
+      console.log(error);
+      
+    }
+    
+  }
 
 
   return (
@@ -60,7 +77,9 @@ function List() {
                       <td>{item.price}</td>
                       <td>{item.category}</td>
                       <td>{item.status ? 'Còn hàng': 'Hết hàng'}</td>
-                      <td></td>
+                      <td>
+                        <button onClick={()=>{handleDelete(item.id)}} className="btn btn-danger">Xóa</button>
+                      </td>
                     </tr>
                   )
                 })
