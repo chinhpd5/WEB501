@@ -4,7 +4,7 @@ function AdminLayout() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <nav className="col-lg-2 bg-dark text-white p-3" style={{ minHeight: '100vh'}}>
+        <nav className="col-2 bg-dark text-white p-3" style={{ minHeight: '100vh'}}>
           <h4 className="text-center mb-4">Menu</h4>
           <ul className="nav flex-column">
             <li className="nav-item mb-2">
@@ -22,7 +22,7 @@ function AdminLayout() {
           </ul>
         </nav>
         {/* Content phải */}
-        <main className="col-lg-10 p-4">
+        <main className="col-10 p-4">
           <Outlet/>
         </main>
       </div>
