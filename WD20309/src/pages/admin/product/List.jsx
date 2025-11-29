@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import instanceAxios from '../../../config/axiosConfig';
 
 function List() {
+  const [products,setProducts] = useState([])
 
   useEffect(()=>{
-
     // const getProducts = async () => {
     //   try {
     //     const {data} = await axios.get(`http://localhost:3000/products`)
@@ -20,6 +20,7 @@ function List() {
       try {
         const {data} = await instanceAxios.get(`/products`)
         console.log(data);
+        setProducts(data)
       } catch (error) {
         console.log(error);
       }
@@ -47,15 +48,25 @@ function List() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>Otto</td>
-              <td>Otto</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
+
+            {
+              products && (
+                products.map((item,index)=>{
+                  return (
+                    <tr key={item.id}>
+                      <th scope="row">{index+1}</th>
+                      <td>{item.name}</td>
+                      <td><img src={item.image} height={70} alt="" /></td>
+                      <td>{item.price}</td>
+                      <td>{item.category}</td>
+                      <td>{item.status ? 'Còn hàng': 'Hết hàng'}</td>
+                      <td></td>
+                    </tr>
+                  )
+                })
+              )
+            }
+            
             
           </tbody>
         </table>
