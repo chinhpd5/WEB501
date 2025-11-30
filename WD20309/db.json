@@ -181,6 +181,14 @@
       "status": true,
       "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
       "category": "Phụ kiện"
+    },
+    {
+      "id": "2e50",
+      "name": "chinhpd5",
+      "price": 123,
+      "status": true,
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "category": "Âm thanh"
     }
   ]
 }
