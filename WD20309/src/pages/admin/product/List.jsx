@@ -1,5 +1,6 @@
 import React, { useEffect,useState } from 'react';
 import instanceAxios from '../../../config/axiosConfig';
+import { Link } from 'react-router-dom';
 
 function List() {
   const [products,setProducts] = useState([])
@@ -41,7 +42,6 @@ function List() {
       }
     } catch (error) {
       console.log(error);
-      
     }
     
   }
@@ -51,6 +51,9 @@ function List() {
     <div>
       <div>
         <h1>Danh sách sản phẩm</h1>
+
+        {/* <Link to='/admin/product/add' className="btn btn-primary" >Thêm mới</Link> */}
+        <Link to='add' className="btn btn-primary" >Thêm mới</Link>
         
         <table className="table table-bordered table-striped table-hover">
           <thead>

@@ -159,6 +159,28 @@
       "image": "https://cdn.pixabay.com/photo/2018/03/02/17/41/game-console-3196845_1280.jpg",
       "category": "Gaming",
       "rating": 4.7
+    },
+    {
+      "id": "8c11"
+    },
+    {
+      "id": "c83c"
+    },
+    {
+      "id": "6209",
+      "name": "chinhpd5",
+      "price": 123,
+      "status": true,
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "category": "Máy tính bảng"
+    },
+    {
+      "id": "8f8a",
+      "name": "chinhpd5",
+      "price": 123,
+      "status": true,
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "category": "Phụ kiện"
     }
   ]
 }
