@@ -7,6 +7,7 @@ import ClientLayout from './layouts/ClientLayout'
 import AdminLayout from './layouts/AdminLayout'
 import ProductList from './pages/admin/product/List'
 import ProductAdd from './pages/admin/product/Add'
+import ProductEdit from './pages/admin/product/Edit'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/admin' element={<AdminLayout/>}>
           <Route path='product' element={<ProductList/>}/>
           <Route path='product/add' element={<ProductAdd/>}/>
+          <Route path='product/edit/:id' element={<ProductEdit/>}/>
         </Route>
 
         

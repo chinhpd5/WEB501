@@ -22,12 +22,12 @@
     },
     {
       "id": "3",
-      "name": "Samsung Galaxy S23",
-      "price": 1000,
+      "name": "Samsung Galaxy S23 update",
+      "price": 10001,
       "sale_price": 899,
-      "status": false,
+      "status": true,
       "image": "https://cdn.pixabay.com/photo/2016/11/29/06/17/smartphone-1869510_1280.jpg",
-      "category": "Điện thoại",
+      "category": "Gaming",
       "rating": 4.6
     },
     {
@@ -189,6 +189,14 @@
       "status": true,
       "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
       "category": "Âm thanh"
+    },
+    {
+      "id": "0d6c",
+      "name": "chinhpd5",
+      "price": 123,
+      "status": true,
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "category": "Máy ảnh"
     }
   ]
 }

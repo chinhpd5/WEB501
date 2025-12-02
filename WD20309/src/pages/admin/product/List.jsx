@@ -82,6 +82,8 @@ function List() {
                       <td>{item.status ? 'Còn hàng': 'Hết hàng'}</td>
                       <td>
                         <button onClick={()=>{handleDelete(item.id)}} className="btn btn-danger">Xóa</button>
+                        <Link to={`/admin/product/edit/${item.id}`} className='btn btn-warning'>Sửa</Link>
+                        {/* <Link to={`edit/${item.id}`} className='btn btn-warning'>Sửa</Link> */}
                       </td>
                     </tr>
                   )
