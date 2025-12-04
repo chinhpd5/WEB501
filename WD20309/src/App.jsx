@@ -8,6 +8,8 @@ import AdminLayout from './layouts/AdminLayout'
 import ProductList from './pages/admin/product/List'
 import ProductAdd from './pages/admin/product/Add'
 import ProductEdit from './pages/admin/product/Edit'
+import Login from './pages/Login'
+import Register from './pages/Register'
 
 function App() {
 
@@ -29,6 +31,8 @@ function App() {
           <Route path='product/edit/:id' element={<ProductEdit/>}/>
         </Route>
 
+        <Route path='/login' element={<Login/>} />
+        <Route path='/register' element={<Register/>} />
         
         <Route path='*' element={ <h1>Not Found</h1> } />
       </Routes>
